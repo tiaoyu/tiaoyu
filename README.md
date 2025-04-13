@@ -16,6 +16,11 @@
   <img src="https://skillicons.dev/icons?i=js,ts,react,vue,nodejs,python,go,docker" />
 </p>
 
+## 🏆 我的 GitHub 贡献
+
+![Snake animation](https://github.com/tiaoyu/tiaoyu/blob/output/github-contribution-grid-snake.svg)
+
+
 ## 📊 编程时间统计
 
 <!--START_SECTION:waka-->
@@ -91,10 +96,6 @@ Shell                    1 repo              █░░░░░░░░░░�
 
  Last Updated on 13/04/2025 06:43:33 UTC
 <!--END_SECTION:waka-->
-
-## 🏆 我的 GitHub 贡献
-
-![Snake animation](https://github.com/tiaoyu/tiaoyu/blob/output/github-contribution-grid-snake.svg)
 
 ---
 
