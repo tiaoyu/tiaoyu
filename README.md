@@ -16,31 +16,6 @@
   <img src="https://skillicons.dev/icons?i=js,ts,react,vue,nodejs,python,go,docker" />
 </p>
 
-## 🎮 让我们来玩个游戏吧
-
-<details>
-<summary>掷骰子 🎲</summary>
-<br>
-<img src="https://media.giphy.com/media/3ogwFGEHrVxusDbDjO/giphy.gif" width="200"/>
-<br>
-你掷出了：<b>
-<script type="text/javascript">
-  document.write(Math.floor(Math.random() * 6) + 1);
-</script>
-<img src="https://img.shields.io/badge/dynamic/json?label=点数&query=$.value&url=https://www.random.org/integers/?num=1&min=1&max=6&col=1&base=10&format=plain&rnd=new" />
-</b>
-</details>
-
-<details>
-<summary>今日运势 🔮</summary>
-<br>
-<img src="https://media.giphy.com/media/l0Ex7VCGYo7gJq1YA/giphy.gif" width="200"/>
-<br>
-今日运势：<b>
-<img src="https://img.shields.io/badge/dynamic/json?color=blue&label=运势&query=$.contents.quotes[0].quote&url=https://quotes.rest/qod?language=en" />
-</b>
-</details>
-
 ## 📊 编程时间统计
 
 <!--START_SECTION:waka-->
@@ -48,7 +23,7 @@
 
 ## 🏆 我的 GitHub 贡献
 
-![Snake animation](https://github.com/{username}/tiaoyu/blob/output/github-contribution-grid-snake.svg)
+![Snake animation](https://github.com/tiaoyu/tiaoyu/blob/output/github-contribution-grid-snake.svg)
 
 ## 📫 联系我
 
