@@ -24,6 +24,8 @@
 ## 📊 编程时间统计
 
 <!--START_SECTION:waka-->
+![Code Time](http://img.shields.io/badge/Code%20Time-0%20secs-blue)
+
 ![Lines of code](https://img.shields.io/badge/%E4%BB%8E%E3%80%8CHello%20World%E3%80%8D%E8%B5%B7%E6%88%91%E5%B7%B2%E7%BB%8F%E5%86%99%E4%BA%86-688.2%20thousand%20%E8%A1%8C%E4%BB%A3%E7%A0%81-blue)
 
 **🐱 我的 GitHub 数据** 
@@ -94,7 +96,7 @@ Shell                    1 repo              █░░░░░░░░░░�
 ![Lines of Code chart](https://raw.githubusercontent.com/tiaoyu/tiaoyu/main/assets/bar_graph.png)
 
 
- Last Updated on 22/05/2025 01:33:37 UTC
+ Last Updated on 23/05/2025 01:33:35 UTC
 <!--END_SECTION:waka-->
 
 ---
