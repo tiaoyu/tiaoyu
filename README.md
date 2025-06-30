@@ -32,8 +32,6 @@
 
 > 📦  使用了 ? GitHub 存储空间 
  > 
-> 🏆 48 个贡献，在 2025 年
- > 
 > 🚫 不开放招聘
  > 
 > 📜 21 个公共仓库 
@@ -96,7 +94,7 @@ Shell                    1 repo              █░░░░░░░░░░�
 ![Lines of Code chart](https://raw.githubusercontent.com/tiaoyu/tiaoyu/main/assets/bar_graph.png)
 
 
- Last Updated on 29/06/2025 01:33:55 UTC
+ Last Updated on 30/06/2025 01:34:17 UTC
 <!--END_SECTION:waka-->
 
 ---
