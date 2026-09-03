@@ -19,14 +19,6 @@
       <stop offset="0" stop-color="#7fe3ff" stop-opacity="0.85"/>
       <stop offset="1" stop-color="#7fe3ff" stop-opacity="0.15"/>
     </linearGradient>
-    <linearGradient id="titleGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#e6fbff"/>
-      <stop offset="1" stop-color="#7fe3ff"/>
-    </linearGradient>
-    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur stdDeviation="5" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
     <!-- 蝌蚪:椭圆身体 + 贝塞尔尾巴(摆动) + 两颗眼睛,朝 +x 方向 -->
     <g id="tadpole">
       <g>
@@ -114,12 +106,6 @@
       <animateMotion dur="14s" repeatCount="indefinite" rotate="auto"
         path="M 748 140 a 22 30 0 1 0 44 0 a 22 30 0 1 0 -44 0"/>
     </g>
-  </g>
-
-  <!-- 标题 -->
-  <g font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans SC',sans-serif" text-anchor="middle">
-    <text x="440" y="132" font-size="56" font-weight="700" letter-spacing="10" fill="url(#titleGrad)" filter="url(#glow)">蝌蚪池塘</text>
-    <text x="440" y="176" font-size="17" letter-spacing="3" fill="#9fd4ee" opacity="0.9">欢迎来到 tiaoyu 的池塘 · 慢慢长大，慢慢游</text>
   </g>
 
   <rect x="1.5" y="1.5" width="877" height="277" rx="15" fill="none" stroke="#2b6a94" stroke-opacity="0.55" stroke-width="2"/>
