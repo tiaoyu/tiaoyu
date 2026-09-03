@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 880 280" role="img">
+  <title>蝌蚪池塘 —— tiaoyu 的 GitHub 主页</title>
+  <defs>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#07203a"/>
+      <stop offset="0.55" stop-color="#041428"/>
+      <stop offset="1" stop-color="#030c18"/>
+    </linearGradient>
+    <radialGradient id="caustic" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#7fe3ff" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#7fe3ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="body" cx="0.35" cy="0.35" r="0.9">
+      <stop offset="0" stop-color="#d6f7ff"/>
+      <stop offset="0.45" stop-color="#7fe3ff"/>
+      <stop offset="1" stop-color="#3fa8cf"/>
+    </radialGradient>
+    <linearGradient id="tail" x1="1" y1="0" x2="0" y2="0">
+      <stop offset="0" stop-color="#7fe3ff" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#7fe3ff" stop-opacity="0.15"/>
+    </linearGradient>
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e6fbff"/>
+      <stop offset="1" stop-color="#7fe3ff"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <!-- 蝌蚪:椭圆身体 + 贝塞尔尾巴(摆动) + 两颗眼睛,朝 +x 方向 -->
+    <g id="tadpole">
+      <g>
+        <path d="M -5 0 Q -16 -7 -30 -1 Q -16 5 -5 2 Z" fill="url(#tail)"/>
+        <animateTransform attributeName="transform" type="rotate" values="-10 -5 0;10 -5 0;-10 -5 0" dur="1.2s" repeatCount="indefinite"/>
+      </g>
+      <ellipse cx="0" cy="0" rx="11" ry="7.5" fill="url(#body)"/>
+      <circle cx="5.5" cy="-3" r="1.7" fill="#05203a"/>
+      <circle cx="5.5" cy="3" r="1.7" fill="#05203a"/>
+    </g>
+  </defs>
+
+  <rect width="880" height="280" rx="16" fill="url(#water)"/>
+  <ellipse cx="200" cy="30" rx="260" ry="90" fill="url(#caustic)"/>
+  <ellipse cx="700" cy="40" rx="220" ry="80" fill="url(#caustic)" opacity="0.7"/>
+
+  <!-- 远景蝌蚪:大而淡,在文字后面慢慢游 -->
+  <g opacity="0.22">
+    <g>
+      <use xlink:href="#tadpole" href="#tadpole" transform="scale(2.4)"/>
+      <animateMotion dur="36s" repeatCount="indefinite" rotate="auto"
+        path="M 160 195 C 300 225 550 228 690 192 C 780 162 755 100 640 102 C 520 104 470 62 345 80 C 225 98 75 145 160 195 Z"/>
+    </g>
+  </g>
+
+  <!-- 涟漪 -->
+  <g stroke="#7fe3ff" fill="none" stroke-width="1.5">
+    <circle cx="150" cy="90" r="4" opacity="0">
+      <animate attributeName="r" values="4;44" dur="7s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0" dur="7s" begin="0s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="730" cy="180" r="4" opacity="0">
+      <animate attributeName="r" values="4;44" dur="7s" begin="2.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0" dur="7s" begin="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="440" cy="238" r="4" opacity="0">
+      <animate attributeName="r" values="4;44" dur="7s" begin="4.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0" dur="7s" begin="4.8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- 气泡 -->
+  <g fill="#9fdcff">
+    <circle cx="110" cy="290" r="3" opacity="0">
+      <animate attributeName="cy" values="290;18" dur="14s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.35;0.35;0" keyTimes="0;0.1;0.8;1" dur="14s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="660" cy="290" r="2.2" opacity="0">
+      <animate attributeName="cy" values="290;24" dur="19s" begin="5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.3;0.3;0" keyTimes="0;0.1;0.8;1" dur="19s" begin="5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="820" cy="290" r="2.6" opacity="0">
+      <animate attributeName="cy" values="290;30" dur="16s" begin="9s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.3;0.3;0" keyTimes="0;0.1;0.8;1" dur="16s" begin="9s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- 食物圆点:游戏里被吃掉的那种 -->
+  <g>
+    <circle r="3" fill="#ffd166" opacity="0.85">
+      <animateMotion dur="18s" repeatCount="indefinite" path="M 620 205 a 14 7 0 1 0 28 0 a 14 7 0 1 0 -28 0"/>
+    </circle>
+    <circle r="2.6" fill="#ff9f68" opacity="0.8">
+      <animateMotion dur="22s" repeatCount="indefinite" path="M 250 218 a 12 6 0 1 1 24 0 a 12 6 0 1 1 -24 0"/>
+    </circle>
+    <circle r="2.4" fill="#9dffd0" opacity="0.8">
+      <animateMotion dur="20s" repeatCount="indefinite" path="M 500 70 a 13 6 0 1 0 26 0 a 13 6 0 1 0 -26 0"/>
+    </circle>
+  </g>
+
+  <!-- 前景蝌蚪:小而清晰 -->
+  <g opacity="0.95">
+    <g>
+      <use xlink:href="#tadpole" href="#tadpole" transform="scale(0.85)"/>
+      <animateMotion dur="26s" repeatCount="indefinite" rotate="auto"
+        path="M 140 70 C 280 30 560 30 700 70 C 724 78 724 96 700 104 C 560 142 280 142 140 104 C 116 96 116 78 140 70 Z"/>
+    </g>
+    <g>
+      <use xlink:href="#tadpole" href="#tadpole" transform="scale(0.62)"/>
+      <animateMotion dur="21s" repeatCount="indefinite" rotate="auto"
+        path="M 740 215 C 600 245 300 248 150 218 C 126 212 126 192 152 186 C 300 162 600 162 742 190 C 764 196 762 210 740 215 Z"/>
+    </g>
+    <g>
+      <use xlink:href="#tadpole" href="#tadpole" transform="scale(0.48)"/>
+      <animateMotion dur="14s" repeatCount="indefinite" rotate="auto"
+        path="M 748 140 a 22 30 0 1 0 44 0 a 22 30 0 1 0 -44 0"/>
+    </g>
+  </g>
+
+  <!-- 标题 -->
+  <g font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans SC',sans-serif" text-anchor="middle">
+    <text x="440" y="132" font-size="56" font-weight="700" letter-spacing="10" fill="url(#titleGrad)" filter="url(#glow)">蝌蚪池塘</text>
+    <text x="440" y="176" font-size="17" letter-spacing="3" fill="#9fd4ee" opacity="0.9">欢迎来到 tiaoyu 的池塘 · 慢慢长大，慢慢游</text>
+  </g>
+
+  <rect x="1.5" y="1.5" width="877" height="277" rx="15" fill="none" stroke="#2b6a94" stroke-opacity="0.55" stroke-width="2"/>
+</svg>
